@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+}
+
+html {
+    background-color: saddlebrown;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+body {
+    width: 95%;
+    margin: auto;
+    min-height: 620px;
+    background-color: linen;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/douglas_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90px;
+    height: 110px;    
+}
+
+.title {
+    text-align: center;
+    margin-top: 15rem;
+    padding: 0 2px;
+}
+
+.title p {
+    padding-top: 2rem;
+}
+
+main {
+    margin: 10rem 0;
+}
+
+fieldset {
+    margin: 1rem;
+}
+
+legend {
+    background-color: saddlebrown;
+    color: snow;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+fieldset > div {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2px;
+}
+
+fieldset > div > * {
+    flex: 1 1 200px;
+}
+
+textarea {
+    margin: 1rem;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Assignment3_MFo57823.css">
+    <title>CSIS 1280 - Assignment 3</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Academic Integrity Reporting Form</h1>
+            <p>This form is to be completed and forwarded to the Dean's Office as per regulation</p>
+        </div>
+    </header>
+    <main>
+        <form action="get" action enctype="application/x-www-form-urlencoded">
+            <fieldset id="course-information">
+                <legend>Instructor and Course Information</legend>
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div>
+                    <label for="instructor">Instructor name</label>
+                    <input type="text" name="instructor" id="instructor" placeholder="John Star" required>
+                </div>
+                <div>
+                    <label for="course">Course Code</label>
+                    <input type="text" name="course" id="course" placeholder="CSIS XXXX" required>
+                </div>
+                <div>
+                    <label for="term">Term</label>
+                    <input type="text" name="term" id="term" placeholder="Fall 2022" required>
+                </div>
+                <div>
+                    <label for="violation">The student have been informed of the violation?</label>
+                    <span>                        
+                        <input type="radio" name="violation" value="yes" required> Yes
+                        <input type="radio" name="violation" value="no" required> No
+                    </span>
+                </div>
+                <div>
+                    <label for="document">Supporting document is attached?</label>
+                    <span>
+                        <input type="radio" name="document" value="yes" required> Yes
+                        <input type="radio" name="document" value="no" required> No
+                    </span>
+                    
+                </div>
+            </fieldset>
+            <fieldset id="student-information">
+                <legend>Student Information</legend>
+                <div>
+                    <label for="name">Student Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Star" required>
+                </div>
+                <div>
+                    <label for="id">Student ID</label>
+                    <input type="number" name="id" id="id" placeholder="0000000" required>
+                </div>
+                <div>
+                    <label for="email">Student Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Incident(s) Detail</legend>
+                    <textarea name="incident" id="incident" cols="90" rows="10">The student claimed that he/she was abducted by alien and get advanced knowledge from them. But he/she forgot everything else.
+                    </textarea>
+                </fieldset> 
+        </form>
+        
+    </main>
+</body>
+</html>
