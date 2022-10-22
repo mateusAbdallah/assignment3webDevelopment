@@ -42,7 +42,7 @@ main {
 }
 
 fieldset {
-    margin: 1rem;
+    margin: .5rem;
 }
 
 legend {
@@ -64,4 +64,15 @@ fieldset > div > * {
 
 textarea {
     margin: 1rem;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 45%;
+    margin: 5px 2%;
+    background-color: linen;
+    box-shadow: 2px 2px 3px black;
+}
+
+input[type="submit"], input[type="reset"]:hover {
+    cursor: pointer;
 }

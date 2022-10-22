@@ -28,7 +28,7 @@
                 </div>
                 <div>
                     <label for="course">Course Code</label>
-                    <input type="text" name="course" id="course" placeholder="CSIS XXXX" required>
+                    <input type="text" name="course" id="course" placeholder="CSIS XXXX" pattern="\d[A-Z]{4}" required>
                 </div>
                 <div>
                     <label for="term">Term</label>
@@ -67,9 +67,18 @@
                 </fieldset>
                 <fieldset>
                     <legend>Incident(s) Detail</legend>
-                    <textarea name="incident" id="incident" cols="90" rows="10">The student claimed that he/she was abducted by alien and get advanced knowledge from them. But he/she forgot everything else.
+                    <textarea name="incident" id="incident" cols="40" rows="10">The student claimed that he/she was abducted by alien and get advanced knowledge from them. But he/she forgot everything else.
                     </textarea>
                 </fieldset> 
+                <fieldset>
+                    <legend>Recommended Action</legend>
+                    <textarea name="action" id="action" cols="40" rows="3">Send the student to Mars (college)</textarea>
+                </fieldset>
+
+                <div>
+                    <input type="submit" value="Submit data">
+                    <input type="reset" value="Clear input">
+                </div>
         </form>
         
     </main>
