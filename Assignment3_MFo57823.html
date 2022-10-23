@@ -28,7 +28,7 @@
                 </div>
                 <div>
                     <label for="course">Course Code</label>
-                    <input type="text" name="course" id="course" placeholder="CSIS XXXX" pattern="\d[A-Z]{4}" required>
+                    <input type="text" name="course" id="course" placeholder="CSIS XXXX" pattern="[A-Za-z\s]{4} \d{4}" required>
                 </div>
                 <div>
                     <label for="term">Term</label>
@@ -58,7 +58,7 @@
                 </div>
                 <div>
                     <label for="id">Student ID</label>
-                    <input type="number" name="id" id="id" placeholder="0000000" required>
+                    <input type="number" name="id" id="id" placeholder="0000000" pattern="\d{7}" required>
                 </div>
                 <div>
                     <label for="email">Student Email</label>
@@ -75,12 +75,18 @@
                     <textarea name="action" id="action" cols="40" rows="3">Send the student to Mars (college)</textarea>
                 </fieldset>
 
-                <div>
+                <!-- <div>
                     <input type="submit" value="Submit data">
                     <input type="reset" value="Clear input">
-                </div>
-        </form>
-        
+                </div> -->
+        </form>       
+        <div>
+            <input type="submit" value="Submit data">
+            <input type="reset" value="Clear input">
+        </div>   
     </main>
+    <footer>
+        Copyright &copy; Fonseca, Mateus - CSIS 1280 Fall 2022
+    </footer>
 </body>
 </html>

@@ -38,7 +38,7 @@ header {
 }
 
 main {
-    margin: 10rem 0;
+    margin-top: 10rem;
 }
 
 fieldset {
@@ -75,4 +75,39 @@ input[type="submit"], input[type="reset"] {
 
 input[type="submit"], input[type="reset"]:hover {
     cursor: pointer;
+}
+
+footer {
+    font-size: 14px;
+    padding: .5rem;
+    text-align: right;
+}
+
+@media screen and (min-width: 768px){
+
+    textarea {
+        width: 90%;
+        padding: 0 1rem;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+
+    form {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
 }
